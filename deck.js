@@ -3,13 +3,10 @@ import "./style.css";
 
 // import `slides` from your mdx files and spread into `slides` export
 import { slides as introduction } from "./slides/00-introduction.mdx";
-import { slides as introductionFlutter } from "./slides/01-introduction-to-flutter.mdx";
-import { slides as whatIsFlutterWidget } from "./slides/02-whats-is-flutter-widget.mdx";
-import { slides as basicWidgets } from "./slides/03-basic-widgets.mdx";
-import { slides as materialWidgets } from "./slides/04-material-widgets.mdx";
-import { slides as textWidgets } from "./slides/05-text-widgets.mdx";
-import { slides as assetsWidgets } from "./slides/06-assets-widgets.mdx";
-import { slides as penutup } from "./slides/07-penutupan.mdx";
+import { slides as finsihApplication } from "./slides/01-finish-application.mdx";
+import { slides as compileApplication } from "./slides/02-compile-application.mdx";
+import { slides as callbackMateri } from "./slides/03-callback-materi.mdx";
+import { slides as penutup } from "./slides/99-penutupan.mdx";
 
 // theme export for code-surfer
 export { dracula as theme } from "code-surfer";
@@ -17,11 +14,8 @@ export { dracula as theme } from "code-surfer";
 // Spread your slides here...
 export const slides = [
   ...introduction,
-  ...introductionFlutter,
-  ...whatIsFlutterWidget,
-  ...basicWidgets,
-  ...materialWidgets,
-  ...textWidgets,
-  ...assetsWidgets,
+  ...finsihApplication,
+  ...compileApplication,
+  ...callbackMateri,
   ...penutup
 ];
