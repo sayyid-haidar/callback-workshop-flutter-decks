@@ -2,214 +2,165 @@ import { Appear, Embed, Notes } from "mdx-deck";
 import { CodeSurferLayout } from "code-surfer";
 
 
-## Let`s Start With <a>Flutter Widgets</a> 👨‍💻
+### Build final <a>Flutter Application</a> 👨‍💻
+
+---
+
+### 1. Add Launcer Icons
 
 ---
 
 <CodeSurferLayout>
 
-```js title="Whats is Flutter Widget ?"
-class Car { // blueprint
-    // property
-    String brand;
-    int year;
-    int price;
-
-    // method
-    int getAge(int currentYear) {
-        return currentYear - this.year;
-    }
-}
+```markup title="Add Launcer Icons 💻"
 ```
 
-```js title="Whats is Flutter Widget ?"
-1.  Class dan Method siap pakai untuk membuat tampilan UI
+```markup  title="Add Launcer Icons 💻"
+├─ /android
+├─ /assets
+├─ /build
+├─ /ios
+├─ /lib
+├─ /test
+└─ pubspec.yaml
 ```
 
-```js title="Whats is Flutter Widget ?"
-1.  Class dan Method siap pakai untuk membuat tampilan UI
+```markup 1:15  title="Add Launcer Icons 💻"
+└─ pubspec.yaml
 
-    Karna berbentuk class, 
-    Widget bisa lagsung digunakan.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.3
+  sqflite: ^1.3.1+1
 ```
 
-```js title="Whats is Flutter Widget ?"
-1.  Class dan Method siap pakai untuk membuat tampilan UI
+```markup 1:15  title="Add Launcer Icons 💻"
+└─ pubspec.yaml
 
-    Karna berbentuk class, 
-    Widget bisa lagsung digunakan.
-    Atau dirangakai menjadi sesuatu yang baru
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.3
+  sqflite: ^1.3.1+1
+  flutter_launcher_icons: ^0.7.3
 ```
 
-```js 1:3 title="Whats is Flutter Widget ?"
-void main() {
-  
-}
+```markup 1:15  title="Add Launcer Icons 💻"
+> flutter pub get
 ```
 
-```js 1:5 title="Whats is Flutter Widget ?"
-import 'package:flutter/material.dart';
-
-void main() {
-  
-}
+```markup  title="Add Launcer Icons 💻"
+├─ /android
+├─ /assets
+├─ /build
+├─ /ios
+├─ /lib
+├─ /test
+└─ pubspec.yaml
 ```
 
+```markup  title="Add Launcer Icons 💻"
+├─ /android
+├─ /assets
+├─ /build
+├─ /ios
+├─ /lib
+├─ /test
+├─ flutter_launcher_icons.yaml
+└─ pubspec.yaml
+```
 
-```js 1:12 title="Whats is Flutter Widget ?"
-import 'package:flutter/material.dart';
+```markup 1:15  title="Add Launcer Icons 💻"
+└─ flutter_launcher_icons.yaml
 
-void main() {
-   runApp(
-    Center(
-      child: Text(
-        'Hello, world!',
-        textDirection: TextDirection.ltr,
-      ),
-    ),
-  );
-}
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: dir icons
+```
+
+```markup 1:15  title="Add Launcer Icons 💻"
+└─ flutter_launcher_icons.yaml
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/blood-drop.png"
 ```
 
 </CodeSurferLayout>
 
 ---
 
-<img src="../assets/flutter-Widget-example.jpg" style={{height: "30rem"}} />
+### 1. Build Application
 
 ---
 
 <CodeSurferLayout>
 
-```js title="Whats is Flutter Widget ?"
-1.  Class dan Method siap pakai untuk membuat tampilan UI
-
-    Karna berbentuk class, 
-    Widget bisa lagsung digunakan.
-    Atau dirangakai menjadi sesuatu yang baru
+```markup title="Build Application 💻"
 ```
 
-```js title="Whats is Flutter Widget ?"
-1.  Class dan Method siap pakai untuk membuat tampilan UI
-
-    Karna berbentuk class, 
-    Widget bisa lagsung digunakan.
-    Atau dirangakai menjadi sesuatu yang baru
-
-2.  Terinfluence dari React js di Javascript
+```markup title="Build Application 💻"
+> open terminal
 ```
 
-```js title="Whats is Flutter Widget ?"
-1.  Class dan Method siap pakai untuk membuat tampilan UI
-
-    Karna berbentuk class, 
-    Widget bisa lagsung digunakan.
-    Atau dirangakai menjadi sesuatu yang baru
-
-2.  Terinfluence dari React js di Javascript
-
-    Seperti Component pada React js, Widget Punya 2 Type
+```markup title="Build Application 💻"
+> cd ~ dir to your application
 ```
 
-```js title="Whats is Flutter Widget ?"
-1.  Class dan Method siap pakai untuk membuat tampilan UI
-
-    Karna berbentuk class, 
-    Widget bisa lagsung digunakan.
-    Atau dirangakai menjadi sesuatu yang baru
-
-2.  Terinfluence dari React js di Javascript
-
-    Seperti Component pada React js, Widget Punya 2 Type
-    1. Stateful Widget
+```markup title="Build Application 💻"
+> cd C:\Workspace\projects\uangku_
 ```
 
-```js title="Whats is Flutter Widget ?"
-1.  Class dan Method siap pakai untuk membuat tampilan UI
-
-    Karna berbentuk class, 
-    Widget bisa lagsung digunakan.
-    Atau dirangakai menjadi sesuatu yang baru
-
-2.  Terinfluence dari React js di Javascript
-
-    Seperti Component pada React js, Widget Punya 2 Type
-    1. Stateful Widget
-    2. Stateless Widget
-```
-</CodeSurferLayout>
-
----
-
-<img src="../assets/stateful-vs-stateless.png" style={{height: "30rem"}} />
-
----
-
-<img src="../assets/stateful-vs-stateless-2.png" style={{height: "30rem"}} />
-
----
-
-<CodeSurferLayout>
-
-```js title="Stateful vs Stateless ?"
-class HomeScreen {
-
-}
+```markup title="Build Application 💻"
+> cd C:\Workspace\projects\uangku_
+> flutter build appbundle
 ```
 
-```js 1:3 title="Stateful vs Stateless ?"
-class HomeScreen extends StatelessWidgets {
+```markup title="Build Application 💻"
+> cd C:\Workspace\projects\uangku_
+> flutter build appbundle
 
-}
+Running Gradle task 'bundleRelease'...
+Removed unused resources: Binary resource data reduced from 36KB to 21KB: Removed 39%
+Running Gradle task 'bundleRelease'...
+Running Gradle task 'bundleRelease'... Done                       129.9s (!)
+√ Built build\app\outputs\bundle\release\app-release.aab (16.7MB).
+
 ```
 
-
-```js 1:8 title="Stateful vs Stateless ?"
-class HomeScreen extends StatelessWidgets {
-    @override
-    Widget build(BuildContext context) {
-        return Container(
-            // implement UI Screen
-        )
-    }
-}
+```markup title="Build Application 💻"
 ```
 
-```js 1:13 title="Stateful vs Stateless ?"
-class HomeScreen extends StatefulWidget {
-    @override
-    _HomeScreenState createState() => _HomeScreenState();
-}
+```markup title="Build Application 💻"
+> cd C:\Workspace\projects\uangku_
+> flutter build apk
+You are building a fat APK that includes binaries for android-arm, android-arm64, android-x64.
+If you are deploying the app to the Play Store, it's recommended to use app bundles or split the APK to reduce the APK size.
+    To generate an app bundle, run:
+        flutter build appbundle --target-platform android-arm,android-arm64,android-x64
+        Learn more on: https://developer.android.com/guide/app-bundle
+    To split the APKs per ABI, run:
+        flutter build apk --target-platform android-arm,android-arm64,android-x64 --split-per-abi
+        Learn more on:  https://developer.android.com/studio/build/configure-apk-splits#configure-abi-split
+Removed unused resources: Binary resource data reduced from 46KB to 36KB: Removed 20%
+Running Gradle task 'assembleRelease'...
+Running Gradle task 'assembleRelease'... Done                      18.7s
+√ Built build\app\outputs\flutter-apk\app-release.apk (16.6MB).
 
-class _HomeScreenState extends State<HomeScreen> {
-    @override
-    Widget build(BuildContext context) {
-        return Container(
-            // implement UI Screen
-        )
-    }
-}
-```
-
-
-```js 1:16 title="Stateful vs Stateless ?"
-class HomeScreen extends StatefulWidget {
-    @override
-    _HomeScreenState createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
-    String username = 'bayu';
-    String status = 'penguna baru';
-
-    @override
-    Widget build(BuildContext context) {
-        return Container(
-            // implement UI Screen
-        )
-    }
-}
 ```
 
 </CodeSurferLayout>
+
+---
 
